@@ -3,12 +3,17 @@
   padding: 1.5rem;
 }
 
+.name {
+  font-size: 3rem;
+}
+
 p {
   padding: 0 1.5rem;
 }
 
 .icon-container {
   padding: 0 5rem;
+  margin-bottom: 5rem;
 }
 
 .bi-github {
@@ -21,4 +26,8 @@ p {
 
 .bi-instagram {
   color: #ac2bac;
+}
+
+.project-container {
+  padding: 1.5rem;
 }
