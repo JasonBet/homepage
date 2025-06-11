@@ -2,3 +2,23 @@
 .hero-container {
   padding: 1.5rem;
 }
+
+p {
+  padding: 0 1.5rem;
+}
+
+.icon-container {
+  padding: 1rem 5rem;
+}
+
+.bi-github {
+  color: #333333;
+}
+
+.bi-linkedin {
+  color: #0082ca;
+}
+
+.bi-instagram {
+  color: #ac2bac;
+}
