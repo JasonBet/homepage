@@ -28,6 +28,16 @@ p {
   color: #ac2bac;
 }
 
-.project-container {
-  padding: 1.5rem;
+.my-work {
+  margin-bottom: 1.5rem;
+}
+
+.contact {
+  margin-top: 5rem;
+  background-color: #4B0082;
+}
+
+.contact svg {
+  width: 40px;
+  height: auto;
 }
