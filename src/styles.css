@@ -1,20 +1,6 @@
 /* styles.css */
-.hero-container {
-  padding: 1.5rem;
-}
 
-.name {
-  font-size: 3rem;
-}
 
-p {
-  padding: 0 1.5rem;
-}
-
-.icon-container {
-  padding: 0 5rem;
-  margin-bottom: 5rem;
-}
 
 .bi-github {
   color: #333333;
@@ -28,16 +14,17 @@ p {
   color: #ac2bac;
 }
 
-.my-work {
-  margin-bottom: 1.5rem;
-}
-
 .contact {
-  margin-top: 5rem;
+  margin-top: 6rem;
   background-color: #4B0082;
 }
 
 .contact svg {
   width: 40px;
   height: auto;
+}
+
+.propic-container {
+  padding: 0px;
+  margin: 0px;
 }
