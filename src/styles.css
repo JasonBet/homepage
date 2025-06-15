@@ -21,9 +21,30 @@
   margin-top: 6rem;
 }
 
+.icon {
+  font-size: 36px;
+}
+
 .iconBlack {
   font-size: 44px;
   color: #000;
+}
+
+.bg-shape {
+  position: absolute;
+  background-color: #0082ca;
+  width: 160vw;
+  height: 120vh;
+  overflow: hidden;
+  z-index: 0;
+  transform: rotate(155deg);
+  top: -92vh;
+  left: -75vw;
+}
+
+.about-me {
+  z-index: 1;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 768px){
