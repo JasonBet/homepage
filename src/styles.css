@@ -1,7 +1,5 @@
 /* styles.css */
 
-
-
 .bi-github {
   color: #333333;
 }
@@ -14,17 +12,48 @@
   color: #ac2bac;
 }
 
-.contact {
-  margin-top: 6rem;
-  background-color: #4B0082;
-}
-
 .contact svg {
   width: 40px;
   height: auto;
 }
 
-.propic-container {
-  padding: 0px;
-  margin: 0px;
+.contact {
+  margin-top: 6rem;
+}
+
+.contact-pic {
+  width: 100%;
+  height: auto;
+}
+.contact-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.iconBlack {
+  font-size: 44px;
+  color: #000;
+}
+
+@media screen and (min-width: 768px){
+  .contact-pic {
+    width: 30%;
+    height: auto;
+  }
+  .iconBlack {
+  font-size: 50px;
+  color: #000;
+}
+}
+
+@media screen and (min-width: 992px){
+  .contact-pic {
+    width: 35%;
+    height: auto;
+    max-width: 600px;
+  }
+  .iconBlack {
+  font-size: 62px;
+  color: #000;
+}
 }
