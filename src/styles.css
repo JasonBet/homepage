@@ -1,71 +1,103 @@
 /* styles.css */
+/* ─────────── GENERAL ICON COLORS ─────────── */
+.icon-link i        { font-size: 2rem; }
+.icon-link i.bi-github    { color:#333; }
+.icon-link i.bi-linkedin  { color:#0082ca; }
+.icon-link i.bi-instagram { color:#ac2bac; }
 
-.bi-github {
-  color: #333333;
+/* ─────────── ANGLED TEAL BACKGROUND ───────── */
+.bg-shape{
+  position:absolute;
+  inset:0;
+  width:200vw;
+  height:130vh;
+  background:#0082ca;
+  transform:rotate(155deg);
+  top:calc(-112vh + 6vw);
+  left:-90vw;
+  z-index:0;
 }
 
-.bi-linkedin {
-  color: #0082ca;
+/* ─────────── HERO CARD (mobile + desktop) ───────── */
+.hero-card { overflow:hidden; }
+.hero-card .card-img { object-fit:cover; height:100%; }
+
+/* ─────────── ABOUT CARD – base (mobile) ───────── */
+.about-card{
+  background:#fff;
+  border-radius:.5rem;
+  overflow:visible;          /* let portrait stick out */
+  position:relative;
+  z-index:1;
 }
 
-.bi-instagram {
-  color: #ac2bac;
+/* remove drop-shadow on mobile */
+@media (max-width:767.98px){
+  .about-card{ box-shadow:none; }
 }
 
-.contact svg {
-  width: 40px;
-  height: auto;
-}
+/* ─────────── TABLET-ONLY TWEAKS ───────── */
+@media (min-width:768px) and (max-width:991.98px){
 
-.contact {
-  margin-top: 6rem;
-}
-
-.icon {
-  font-size: 36px;
-}
-
-.iconBlack {
-  font-size: 44px;
-  color: #000;
-}
-
-.bg-shape {
-  position: absolute;
-  background-color: #0082ca;
-  width: 160vw;
-  height: 120vh;
-  overflow: hidden;
-  z-index: 0;
-  transform: rotate(155deg);
-  top: -92vh;
-  left: -75vw;
-}
-
-.about-me {
-  z-index: 1;
-  background-color: #fff;
-}
-
-@media screen and (min-width: 768px){
-  .icon {
-    font-size: 42px;
+  /* give space for the floating name */
+  .about-card{
+    margin-top:5rem;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
   }
-  .iconBlack {
-    font-size: 50px;
-    color: #000;
+
+  .bg-shape{
+    transform:rotate(165deg);
+    top:calc(-100vh + 6vw);
   }
-  .about-me {
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+
+  /* floating portrait */
+  .hero-float{
+    width:55%;
+    max-width:280px;
+    margin:-4rem 1.5rem 1rem -4rem;
+    border-radius:.5rem;
+
+    shape-outside:inset(0);
+  }
+
+  /* large name that floats above the card */
+  .tablet-name{
+    top:-2.5rem;
+    right:0;
+    font-size:clamp(2.5rem,6vw,4.5rem);
+    line-height:1;
+    color:#fff;
+    white-space:nowrap;
+    z-index:2;
   }
 }
 
-@media screen and (min-width: 992px){
-  .icon {
-    font-size: 50px;
+/* ───────── LANDSCAPE PHONES + TABLETS ( < 992 px ) ───────── */
+@media (max-width: 991.98px) and (orientation: landscape){
+  .bg-shape{
+    top: calc(-70vh + 6vw);
   }
-  .iconBlack {
-    font-size: 62px;
-    color: #000;
+}
+
+/* ─────────── DESKTOP ( ≥992 px ) ───────── */
+@media (min-width:992px){
+
+  /* tweak background angle for wide screens */
+  .bg-shape{
+    transform:rotate(170deg);
+    top:calc(-110vh + 8vw);
   }
+
+  /* about card gains a shadow here */
+  .about-card{
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+  }
+
+  /* make sure hero & about are flush and centred */
+  .row.align-items-center.g-0 > [class^="col-lg"]{
+    display:flex;
+    align-items:center;
+  }
+  .row.align-items-center.g-0 > .col-lg-5 { justify-content:end; }
+  .row.align-items-center.g-0 > .col-lg-7 { justify-content:start; }
 }

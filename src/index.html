@@ -8,53 +8,74 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"rel="stylesheet"/>
   </head>
   <body>
-    <section class="position-relative overflow-hidden">
+    <section class="position-relative overflow-hidden p-3 p-md-5">
       <div class="bg-shape"></div>
-      <div class="container justify-content-center">
-        <div class="row row-cols-1 row-cols-lg-2 hero">
-          <div class="col mt-5 mb-5 px-5 hero-img-col">
-            <div class="card text-bg-dark rounded-2 border border-dark">
-              <img src="images/propic.jpeg" class="card-img img-fluid" alt="profile pic">
-              <div class="d-flex card-img-overlay align-self-end px-3">
-                <h1 class="name card-title display-2 text-white">Jason Betsargon</h1>
+
+      <div class="container position-relative">
+        <div class="row justify-content-center align-items-center g-0">
+
+          <!-- ❶  Mobile hero card ( < 768 px ) -->
+          <div class="col-10 col-sm-8 col-md-6 mb-4 d-md-none">
+            <div class="card hero-card border-0 rounded-2">
+              <img src="images/propic.jpeg" class="card-img img-fluid" alt="profile">
+              <div class="card-img-overlay d-flex align-items-end p-3">
+                <h1 class="display-2 fw-bold text-white m-0">Jason Betsargon</h1>
               </div>
-            </div>          
-          </div>
-          <div class="col about-me">
-            <h2 class="display-2 text-center">About me</h2>
-            <p class="h6 lh-base">
-              I am an aspiring <strong>software engineer</strong> and 
-              <strong>graduate student</strong> studying computer science at Georgia Tech. 
-              I am proficient in <mark>HTML</mark>, <mark>CSS</mark>, and <mark>JavaScript</mark>. 
-              I'm currently learning <mark>React</mark>. In my studies, I am focusing on 
-              <strong>Machine Learning</strong> classes. The most recent Machine Learning 
-              course I completed was "Machine Learning For Trading". 
-              This course focused on the implementation of Machine Learning strategies 
-              in the context of trading in the stock market. My capstone project 
-              for this course involved creating a market simulator and developing a 
-              specialized trading strategy using Machine Learning. 
-              I developed a <strong>Random Forest classification learner</strong> 
-              that trained on previous stock data against a custom trading 
-              strategy I created that utilized several technical indicators I implemented.
-            </p>
-            <div class="icon-container d-flex flex-row justify-content-center mt-2 mb-5">
-              <a href="#" class="mx-2 text-white me-4">
-                <i class="bi bi-github icon"></i>
-              </a>
-              <a href="#" class="mx-2 text-white mx-4">
-                <i class="bi bi-linkedin icon"></i>
-              </a>
-              <a href="#" class="mx-2 text-white mx-4">
-                <i class="bi bi-instagram icon"></i>
-              </a>
             </div>
+          </div>
+
+          <!-- ❷  Desktop hero card ( ≥ 992 px ) -->
+          <div class="col-lg-5 d-none d-lg-block p-0">
+            <div class="card hero-card border-0 rounded-2 h-100">
+              <img src="images/propic.jpeg" class="card-img img-fluid" alt="profile">
+              <div class="card-img-overlay d-flex align-items-end p-3">
+                <h1 class="display-2 fw-bold text-white m-0">Jason Betsargon</h1>
+              </div>
+            </div>
+          </div>
+
+          <!-- ❸  About-me column (all break-points) -->
+          <div class="col-12 col-md-10 col-lg-7 position-relative">
+
+            <!-- Name that floats ONLY on tablet -->
+            <h1 class="tablet-name position-absolute fw-bold d-none d-md-block d-lg-none">
+              Jason Betsargon
+            </h1>
+
+            <article class="about-card p-4 p-lg-5">
+
+              <!-- Portrait that floats on tablet -->
+              <img src="images/propic.jpeg"
+                  class="hero-float d-none d-md-block d-lg-none img-fluid float-md-start me-md-4 mb-3"
+                  alt="profile">
+
+              <h2 class="display-3 mb-3 text-center text-md-center">About me</h2>
+
+              <p class="lh-base mb-4">
+                I am an aspiring <strong>software engineer</strong> and
+                <strong>graduate student</strong> studying computer science at
+                Georgia Tech. I am proficient in <mark>HTML</mark>,
+                <mark>CSS</mark> and <mark>JavaScript</mark>, and I’m currently
+                learning <mark>React</mark>. My studies focus on
+                <strong>Machine Learning</strong>; in the “Machine Learning for
+                Trading” course I built a market simulator and a
+                <strong>Random-Forest</strong> trading strategy driven by custom
+                technical indicators.
+              </p>
+
+              <div class="d-flex justify-content-center">
+                <a href="#" class="mx-3 icon-link"><i class="bi bi-github"></i></a>
+                <a href="#" class="mx-3 icon-link"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="mx-3 icon-link"><i class="bi bi-instagram"></i></a>
+              </div>
+            </article>
           </div>
         </div>
       </div>
     </section>
     <main>     
-      <h2 class="my-work display-2 text-center mb-4">My work</h2>
-      <div class="container">
+      <h2 class="my-work display-3 text-center mb-4">My work</h2>
+      <div class="container mb-5">
         <div class="project-container row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5">
           <div class="col">
             <div class="card shadow">
@@ -106,13 +127,13 @@
               <i class="bi bi-envelope"></i> jasonbetsargon@gmail.com
             </span>
             <div class="d-flex justify-content-center justify-content-md-start mt-3 mt-lg-5">
-              <a href="#" class="mx-2 text-white me-4">
+              <a href="#" class="mx-2 text-white me-4 fs-3">
                 <i class="bi bi-github iconBlack"></i>
               </a>
-              <a href="#" class="mx-2 text-white mx-4">
+              <a href="#" class="mx-2 text-white mx-4 fs-3">
                 <i class="bi bi-linkedin iconBlack"></i>
               </a>
-              <a href="#" class="mx-2 text-white mx-4">
+              <a href="#" class="mx-2 text-white mx-4 fs-3">
                 <i class="bi bi-instagram iconBlack"></i>
               </a>
             </div>
