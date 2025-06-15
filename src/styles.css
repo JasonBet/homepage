@@ -21,31 +21,18 @@
   margin-top: 6rem;
 }
 
-.contact-pic {
-  width: 100%;
-  height: auto;
-}
-.contact-pic img {
-  width: 100%;
-  height: auto;
-}
-
 .iconBlack {
   font-size: 44px;
   color: #000;
 }
 
 @media screen and (min-width: 768px){
-  .contact-pic {
-    width: 30%;
-    height: auto;
-  }
   .icon {
     font-size: 42px;
   }
   .iconBlack {
-  font-size: 50px;
-  color: #000;
+    font-size: 50px;
+    color: #000;
   }
   .about-me {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
@@ -53,16 +40,11 @@
 }
 
 @media screen and (min-width: 992px){
-  .contact-pic {
-    width: 35%;
-    height: auto;
-    max-width: 600px;
-  }
   .icon {
     font-size: 50px;
   }
   .iconBlack {
-  font-size: 62px;
-  color: #000;
+    font-size: 62px;
+    color: #000;
   }
 }
