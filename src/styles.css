@@ -5,6 +5,10 @@
 .icon-link i.bi-linkedin  { color:#0082ca; }
 .icon-link i.bi-instagram { color:#ac2bac; }
 
+.iconBlack {
+  color: black;
+}
+
 /* ─────────── ANGLED TEAL BACKGROUND ───────── */
 .bg-shape{
   position:absolute;
