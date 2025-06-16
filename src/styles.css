@@ -105,3 +105,11 @@
   .row.align-items-center.g-0 > .col-lg-5 { justify-content:end; }
   .row.align-items-center.g-0 > .col-lg-7 { justify-content:start; }
 }
+
+@media (min-width:768px) and (max-width:991.98px) {
+  .hero-float{
+    /* the prefix keeps older iOS versions happy */
+    -webkit-shape-margin: 1rem;
+            shape-margin: 1rem;
+  }
+}
