@@ -1,6 +1,7 @@
 // webpack.config.js
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -18,6 +19,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
+    new CopyPlugin({
+      patterns: [{ from: "src/Jason_Betsargon_resume.pdf", to: "Jason_Betsargon_resume.pdf" }],
+    }),
   ],
   module: {
     rules: [
@@ -30,7 +34,7 @@ module.exports = {
         loader: "html-loader",
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|pdf)$/i,
         type: "asset/resource",
       },
     ],
